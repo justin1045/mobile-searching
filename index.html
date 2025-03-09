@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--! Landing  -->
+    <div
+      id="landing"
+      class="bg-[#1d2735] text-[#a6adba] h-[900px] flex flex-col items-center"
+    >
+      <!--! header  -->
+      <div class="w-full header px-12 py-8 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Hot Gadgets</h1>
+        <button
+          class="w-[80px] h-[3rem] rounded-md bg-purple-600 text-white font-bold flex justify-center items-center"
+        >
+          Sign Up
+        </button>
+      </div>
+      <!--! buy now  -->
+      <div
+        class="buy-now max-[768px]:w-full w-[60%] py-8 px-4 flex flex-col justify-center items-center gap-6 text-center"
+      >
+        <h1 class="text-5xl font-bold">Apple Iphone 13 Pro Max</h1>
+        <p class="text-[1.6rem]">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected humou.
+        </p>
+        <button
+          class="w-[100px] h-[3rem] rounded-md bg-purple-600 text-white font-bold flex justify-center items-center"
+        >
+          BUY NOW
+        </button>
+      </div>
+      <!--! phones  -->
+      <div class="phones flex justify-around items-center">
+        <div class="w-[20%]">
+          <img src="./assets/i-phone.png" alt="" class="w-full" />
+        </div>
+        <div class="w-[27%]">
+          <img src="./assets/i-phone.png" alt="" class="w-full" />
+        </div>
+        <div class="w-[20%]">
+          <img src="./assets/i-phone.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </div>
+    <!--! Search Phones  -->
+    <div
+      class="search-phones min-[768px]:pt-30 bg-[#1d232a] text-[#a6adba] py-6 flex flex-col items-center justify-around gap-8"
+    >
+      <h1 class="text-4xl font-bold text-center">Search Your Phone</h1>
+      <form action="" class="flex gap-4">
+        <input type="text" placeholder="e.g. oppo, samsung, iphone" 
+        class="border-1 w-[300px] p-2 rounded-md"/>
+        <button type="submit"
+        class="w-[90px] h-[3rem] rounded-md bg-purple-600 text-white font-bold flex justify-center items-center">SEARCH</button>
+      </form>
+
+      <div class="result-container relative pb-20 flex flex-wrap justify-center items-center gap-6"></div>
+    </div>
+
+    <!--! Footer  -->
+    <div class="bg-[#1d2735] p-8 flex flex-col items-center justify-center text-center gap-8">
+      <div class="flex flex-col justify-center items-center gap-4 font-bold">
+        <i class="fa-solid fa-hashtag text-5xl p-8"></i>
+      <h2 class="text-2xl">Hot Gadgets BD</h2>
+      <h2 class="text-2xl">Providing reliable tech items since 1992</h2>
+      </div>
+      <p class="text-2xl">Copyright © 2023 - All right reserved</p>
+      <div class="text-3xl">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- npx @tailwindcss/cli -i ./input.css -o ./output.css --watch -->
